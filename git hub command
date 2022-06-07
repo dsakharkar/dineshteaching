@@ -1,0 +1,79 @@
+create one file for testing ,
+git status
+git add <file name>
+git status
+##################
+Below is one time activity :- 
+git config --global user.name "your name"
+git config --global user.mail "your mail id"
+###################
+git commit -m "<message>"
+git status
+git log  ---- to check the commited history
+git show <commit_id>  ----- contain in the  commited file
+======================================================================================================================================
+vi .gitignore
+*.yml
+*.java
+	-this files will be ignored
+=======================================================================================================================================
+BRANCH :- Its recommended not to work on master branch'
+
+git branch  --- hum konse branch mein hai, jiske aage * hai hum uske andar kam kar rahe hai
+
+git branch <branch name>   ----to create new branch
+git checkout <branch_name> -----if we want to go to other branch
+git branch -d <branch name>  -----will delete the branch
+git branch -D <branch name>   ---to delete FORCEFULLY
+
+=========================================================================================================================================
+MERGE : its based on pulling mechanism.
+
+git merge <branch-name>  pahle jis branch me file chahiye us branch me jao 
+fir command do git mearg jo branch mearg karna h uska nam 
+
+git log =========to verify the merge
+
+=========================================================================================================================================
+RESET :
+git reset <file name>  : move file from  stagging area to work space area
+git reset --hard  -----remove the files from stagging and working space both.
+
+=======================================================================================================================================
+REVERT :
+
+git revert <commit id>   -----to undo the changes 
+========================================================================================================================================
+**How to TAG
+
+git tag -a <tagname> -m <message> <commit id>
+git tag  ---list of tags
+git show tagname  -- see the comimit data using tage name
+git tag -d <tagname> 
+
+==========================================================================================================================================
+GIT STASHING : Temporary storage 
+- works on files which are in working area and not in stagging are or local repo. means first commit those files then start editing those files adn test it.
+
+git stash  ---to stack the item
+git stash list   ---to see the stashed item
+git stash apply stash@{0 or 1 or 2}   0 is latest , 2 is old
+git stash clear  --- clear the stash item
+
+its copy and paste..data will be there in stash and workspace both 
+
+===============================================================================================
+===========================================================================================================================================
+How to  integrate  Git hub with Local Repo : 
+
+git remote add origin <github repo URL>  OR   git remote set-url origin https://github.com/manishpati/teaching007.git   -----to integarte Github with Git
+git push -u origin master ---- to push the data from git to github
+git pull origin master   ---- to pull the data from github
+
+ 
+
+===========================================================================================================================================
+GIT HUB CLONE :-
+git clone <URL>
+
+
